@@ -2,13 +2,13 @@
   "name": "webpack-typescript-react",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://workate.github.io",
   "main": "index.js",
   "scripts": {
     "dev": "npx webpack serve --config build-tools/config.webpack.js --mode development",
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npx webpack serve --config build-tools/config.webpack.js --mode development",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build": "webpack --config build-tools/config.webpack.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,7 +21,7 @@
     "@types/react-dom": "^16.9.9",
     "babel-loader": "^8.1.0",
     "gh-pages": "^3.2.3",
-    "html-webpack-plugin": "^4.5.0",
+    "html-webpack-plugin": "^4.5.2",
     "prettier": "^2.1.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
